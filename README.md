@@ -3,7 +3,7 @@
 Документация к **[проекту](https://github.com/Trum-ok/t1-hack.git)**
 
 
-## **[t1-hack.ru](t1-hack.ru)**
+## **[t1-hack.ru](http://t1-hack.ru)**
 
 ## Локальный запуск
 > [!IMPORTANT]  
