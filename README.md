@@ -1,40 +1,26 @@
-# Documentation Template created by Diplodoc
+# Документация к T1-Hack
 
-Features:
+Документация к **[проекту](https://github.com/Trum-ok/t1-hack.git)**
 
-- initial project structure
-- dev server with hot reload
-- codespaces support
-- vscode tutorial via code tours
 
-## Initial project structure
+## **[t1-hack.ru](t1-hack.ru)**
 
-Initiatl project structure with basic content can be found within your public github repo "diplodoc-example/docs" 
+## Локальный запуск
+> [!IMPORTANT]  
+> Перед запуском убедитесь, что порт 8000 в данный момент не занят.
 
-## Usage
-
-### Run locally by cloning repo:
+### Dockerfile:
 
 ```
-> git clone git@github.com:diplodoc-platform/documentation-template.git
+docker build -t doc-container . && docker run -p 8000:8000 doc-container
+```
 
-> cd documentation-template
-
-> npm start
-
-> listening on 0.0.0.0:8000
+### Клонирование:
 
 ```
-now you have development server with hot reload runing and serving built documentation on `0.0.0.0:8000`
+git clone https://github.com/Trum-ok/t1-hack-documentation.git && cd t1-hack-documentation
+npm install
+npm run start -- -i ./docs -o ./docs-html
+```
 
-### github codespaces
-
-press Use this template -> Open in a codespace
-
-![open in a codespace](images/open-in-a-codespace.jpeg)
-
-wait for the development server startup
-
-enjoy developing documentation with html result preview in split view
-
-![codespaces project](images/codespaces-project.jpeg)
+Документация будет доступна по адрессу `0.0.0.0:8000/ru` или `localhost:8000/ru`
