@@ -11,14 +11,16 @@
 
 ### Dockerfile:
 
-```
-docker build -t doc-container . && docker run -p 8000:8000 doc-container
+```bash
+docker build -t doc-container .
+docker run -p 8000:8000 doc-container
 ```
 
 ### Клонирование:
 
-```
-git clone https://github.com/Trum-ok/t1-hack-documentation.git && cd t1-hack-documentation
+```bash
+git clone https://github.com/Trum-ok/t1-hack-documentation.git
+cd t1-hack-documentation
 npm install
 npm run start -- -i ./docs -o ./docs-html
 ```
